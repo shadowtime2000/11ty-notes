@@ -16,4 +16,4 @@ keywords: ["keyword1", "keyword2"]
 description: Description of the note
 ```
 
-The keywords will only be used for `<meta name="keywords">`, it will not appear in the list of posts or the post.
+The keywords will only be used for `<meta name="keywords">`, it will not appear in the list of notes or the note.
