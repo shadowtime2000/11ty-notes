@@ -4,7 +4,7 @@ keywords: ["typescript"]
 description: Creating partials of Typescript types
 ---
 
-You can use [Partial<T>](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype) to make all the properties of a type optional.
+You can use [Partial](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype) to make all the properties of a type optional.
 
 ```ts
 interface Foo {
