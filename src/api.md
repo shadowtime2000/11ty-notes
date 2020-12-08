@@ -1,5 +1,6 @@
 ---
 title: API
+description: API for notes site
 layout: layouts/base.liquid
 ---
 

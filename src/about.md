@@ -1,5 +1,6 @@
 ---
 title: About Me
+description: About me page for notes site
 layout: layouts/base.liquid
 ---
 
