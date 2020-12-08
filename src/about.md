@@ -3,6 +3,6 @@ title: About Me
 layout: layouts/base.liquid
 ---
 
-# About
+# About `11ty-notes`
 
-This is where I keep the about page of this website...
+`11ty-notes` is an Eleventy based static site to help you manage your notes so you don't forgot certain things like setting up a project.
