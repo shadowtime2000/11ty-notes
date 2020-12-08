@@ -1,0 +1,9 @@
+<div class="card">
+    <h2 class="card-title">{{ note.data.title }}</h2>
+    {% if note.data.description %}
+        <p>{{ note.data.description }}</p>
+    {% endif %}
+    <div class="text-right">
+        <a href="{{ note.url }}" class="btn">Read More</a>
+    </div>
+</div>

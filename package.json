@@ -1,0 +1,23 @@
+{
+  "name": "note-management-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "dotenv": "^8.2.0",
+    "eleventy-critical-css": "^0.1.2"
+  },
+  "dependencies": {
+    "halfmoon": "^1.1.1"
+  }
+}

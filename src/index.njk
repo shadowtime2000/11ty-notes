@@ -1,0 +1,10 @@
+---
+layout: layouts/base.liquid
+title: Notes Site
+---
+
+<h1 class="text-center">Welcome to my notes management site!</h1>
+
+{% for note in collections.notes %}
+    {% include "components/post-card.liquid" %}
+{% endfor %}
