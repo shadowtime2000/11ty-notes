@@ -2,6 +2,8 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const criticalCSS = require("eleventy-critical-css");
 const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
 
+const htmlmin = require("html-minifier");
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight, {
         lineSeparator: "\n"
@@ -10,7 +12,21 @@ module.exports = function(eleventyConfig) {
         minify: true
     });
     eleventyConfig.addPlugin(cacheBuster({}));
+
     eleventyConfig.addPassthroughCopy("js");
+
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+        if (outputPath.endsWith(".html")) {
+            return htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true
+            });
+        } else {
+            return content;
+        }
+    });
+
     return {
         dir: {
             input: "src",
