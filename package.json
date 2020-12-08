@@ -9,8 +9,8 @@
     "start": "eleventy --serve"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "shadowtime2000",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
